@@ -1,168 +1,150 @@
 {
-  "date": "2026-08-26",
-  "generated_at": "2026-08-26T09:01:40.844574+00:00",
-  "issue": 118,
-  "executive_summary": "Today's intelligence picture is defined by two reinforcing stress lines: institutional capacity is eroding across both Western governments and their security apparatus at precisely the moment adversaries are intensifying pressure. On the military and policy side, the Hegseth civilian protection rollback, Ukraine's strategic drift warning, and internal military discipline issues collectively signal weakening institutional coherence within the U.S. defense establishment, while the UK's covert supplier exclusion authority and Navy OPSEC directives suggest allied governments are quietly hardening against threats they are reluctant to name publicly. The cyber and OT picture is particularly acute, with CISA findings revealing systemic detection failures across both IT and critical infrastructure environments, Akira and BadBox demonstrating continued adversarial momentum, and the AI asymmetry problem emerging as a structural disadvantage where defenders are constrained by safety guardrails that nation-state and criminal actors simply ignore. A notable geographic thread connects several otherwise distinct items: West Africa appears as a convergence zone for sanctioned Russian maritime activity tracked by Bellingcat, the Interpol crime-as-a-service dismantlement, and West African organized crime networks, suggesting the region is functioning as a sanctions evasion and illicit finance hub that warrants consolidated collection focus. Underlying everything is a resource and attention problem - Russia absorbing military leadership churn, Iran weathering maximum pressure, China expanding deception infrastructure at its air bases",
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T09:03:14.060081+00:00",
+  "issue": 119,
+  "executive_summary": "Today's intelligence picture is dominated by two converging threat vectors: an increasingly aggressive Iran operating simultaneously across economic, military, and cyber domains, and a China-Russia axis conducting coordinated infrastructure and influence operations against the West. Iran's temporary Hormuz agreement masks deeper instability — economic distress is driving escalation risk, Iranian threat actors are expanding operational infrastructure across Europe and the Middle East, and Iran-linked groups have already compromised over 100 water systems in a single month, suggesting Tehran is pre-positioning for coercive leverage rather than de-escalation. Russia, meanwhile, is pivoting its hybrid campaign westward following the Ukraine stalemate, with CIA Director Ratcliffe's undisclosed Moscow trip raising serious questions about whether back-channel intelligence diplomacy is outpacing public policy — a concern compounded by the exposure of a broad pro-Kremlin influence network across Africa. On the U.S. side, the NSA's effort to reconstitute its elite TAO offensive cyber unit, the Army's nuclear microreactor and munitions scale-up, and the Marine Corps modernization initiative collectively signal that American defense and intelligence institutions are in a reactive posture, rebuilding capabilities that have atrophied while adversaries have been actively investing. The through-line across all four domains is that critical infrastructure — energy, water, medical devices, federal networks — is the primary contested terrain, and the window between adversary",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape features CISA publishing stark lessons from red team assessments, an Interpol cybercrime sweep, a ransomware breach at a benefits platform, and growing debate over AI restrictions hampering defenders.",
+      "intro": "State-sponsored cyber operations dominate today's picture, with the U.S. dismantling Chinese hacking infrastructure while a major medical device manufacturer discloses a disruptive breach and AI coding tools face newly demonstrated remote code execution risks.",
       "items": [
         {
-          "headline": "CISA red team findings expose stark gap between detection-capable and detection-blind SOCs",
-          "summary": "CISA's simultaneous red team assessments of two organizations found that both were fully compromised, but one SOC detected and responded while the other did not — highlighting that tool investment alone does not determine outcomes. The advisory provides actionable detail on the tactics used and where defenses failed, making it a high-value reference for security operations teams. Watch for follow-on guidance from CISA as it continues pushing organizations toward measurable detection benchmarks.",
-          "source": "CISA",
-          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-237a"
-        },
-        {
-          "headline": "Interpol operation nets 58 arrests and dismantles crime-as-a-service network tied to West African organized crime",
-          "summary": "The operation uncovered a 196-person criminal network in Argentina providing infrastructure — including domains and money laundering services — to groups like Black Axe, illustrating how cybercrime has industrialized into tiered service supply chains. The scale of the support network signals that law enforcement is increasingly targeting enablers, not just end perpetrators. Continued pressure on crime-as-a-service infrastructure could disrupt multiple downstream threat actors simultaneously.",
+          "headline": "DOJ dismantles Chinese state-backed hacking tools used against U.S. federal agencies",
+          "summary": "U.S. authorities took down two tools — QScan and QRouter — allegedly used by Chinese state-backed actors to compromise IoT devices and conduct operations against the Federal Reserve, DOJ, and Senate. The action signals continued aggressive U.S. counter-intrusion efforts targeting Chinese cyber espionage infrastructure. Watch for retaliatory escalation and further indictments as the U.S. moves from attribution to active disruption.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/58-arrested-international-cybercrime-crackdown-interpol"
+          "url": "https://therecord.media/qscan-qtrouter-us-takedown-alleged-china-hacking-tools"
         },
         {
-          "headline": "Akira ransomware group steals financial and health data from employee benefits firm Paylogix",
-          "summary": "Paylogix, which manages employee benefits for thousands of companies, confirmed that the Akira ransomware group exfiltrated sensitive financial and health data affecting tens of thousands of individuals. Benefits platforms are high-value targets because they aggregate personally identifiable, financial, and medical data across multiple employer clients, amplifying breach impact. Affected individuals and their employers should anticipate phishing and fraud campaigns leveraging the stolen data.",
+          "headline": "Boston Scientific cyberattack disrupts medical device shipments, triggers SEC filing",
+          "summary": "Boston Scientific disclosed a cybersecurity incident discovered Tuesday that has disrupted its shipment processes, prompting an SEC filing under new mandatory cyber disclosure rules. The attack on a major medical device manufacturer carries patient safety implications if device supply chains are meaningfully interrupted. The incident underscores the ongoing targeting of healthcare-adjacent companies and will be worth monitoring for ransomware group claims.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/paylogix-cyberattack-akira-ransomware"
+          "url": "https://therecord.media/boston-scientific-cyberattack-disrupts-shipment-processes"
         },
         {
-          "headline": "AI safety restrictions are degrading defender effectiveness as adversaries face no equivalent constraints",
-          "summary": "Cisco Talos argues that frontier AI models' increasingly conservative safety filters create an asymmetric disadvantage for security teams conducting real-time threat analysis, while adversaries freely use unconstrained models. The piece advocates for operational sovereignty — organizations controlling their own AI deployments with security-specific tuning rather than relying on third-party filtered models. This tension is likely to intensify as AI becomes more central to both attack and defense workflows.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/the-safety-penalty-reclaiming-operational-sovereignty-in-the-age-of-ai/"
+          "headline": "Researcher achieves 60-80% code execution success rate against Claude Code Opus 5 via prompt injection",
+          "summary": "A published proof-of-concept demonstrates that a simple website summary request can hijack Anthropic's Claude Code Opus 5 in Auto Mode to execute arbitrary code, with a 60-80% success rate in testing. The attack exploits the model's agentic capabilities — its ability to take real-world actions — making prompt injection a direct path to system compromise rather than just data leakage. This highlights a critical unsolved security problem as enterprises increasingly deploy AI coding agents with elevated system access.",
+          "source": "Embrace The Red",
+          "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/"
+        },
+        {
+          "headline": "CISA adds six vulnerabilities to exploited catalog, including decade-old Red Hat flaw",
+          "summary": "CISA's latest KEV update includes CVE-2015-3246, a race condition vulnerability in Red Hat's Libuser library over a decade old, alongside five other actively exploited flaws. The inclusion of such aged vulnerabilities confirms CISA's concurrent finding that most compromises rely on known, unpatched weaknesses rather than novel techniques. Federal agencies face a patching deadline and private sector organizations should treat KEV additions as high-priority remediation signals.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/08/26/cisa-adds-six-known-exploited-vulnerabilities-catalog"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Today's geopolitical landscape is defined by fracturing alliances, economic pressure campaigns, and unresolved conflicts testing the limits of deterrence and diplomacy.",
+      "intro": "Energy security flashpoints, Iranian brinkmanship, Russian hybrid pressure on Europe, and questions about market stability are converging to produce one of the more complex geopolitical environments in recent memory.",
       "items": [
         {
-          "headline": "US-Canada Trade War Escalates as Ottawa Matches Washington Tariff-for-Tariff",
-          "summary": "Canada has announced retaliatory tariffs calibrated to match US duties dollar-for-dollar, marking a significant deterioration in the bilateral relationship with America's largest trading partner. The move signals Ottawa's willingness to absorb economic pain rather than capitulate, raising the stakes for North American supply chains and integrated industries like auto and energy. Watch whether other US allies interpret Canada's posture as a template for their own responses to Washington's tariff pressure.",
+          "headline": "Iran and Oman Reach Temporary Hormuz Agreement, But Tehran Keeps Closure Threat on the Table",
+          "summary": "Iran and Oman have brokered a short-term arrangement over the Strait of Hormuz, but Tehran is explicitly conditioning its cooperation on U.S. acceptance of its terms — keeping the threat of closure as active leverage. This matters enormously given the strait's irreplaceable role in global oil flows; a breakdown in negotiations would trigger immediate repricing across energy, insurance, and shipping markets. Watch whether Washington signals any flexibility on sanctions, as Iranian escalation calculus appears directly tied to the pace of economic pressure.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/25/us-canada-retaliatory-tariffs-trade-war-trump-ontario-ford/"
+          "url": "https://foreignpolicy.com/2026/08/26/iran-oman-strait-hormuz-deal-us-trump-oil-shipping/"
         },
         {
-          "headline": "Iran's Economic Resilience Is Complicating Washington's Maximum Pressure Strategy",
-          "summary": "Despite sustained US sanctions, Tehran has developed enough economic adaptation mechanisms to outlast the current political cycle in Washington, undermining the core assumption that pressure alone will force concessions. Iran's ability to route trade through third parties, manage currency exposure, and leverage regional partners reduces the coercive leverage sanctions are designed to create. The key variable is whether economic pain eventually translates to political instability, or whether the regime consolidates control as it has in prior cycles.",
+          "headline": "Iran's Economic Distress Raises Escalation Risk Beyond Hormuz",
+          "summary": "As Trump's economic warfare compounds domestic pressure on Tehran, analysts assess Iran may shift from defensive posturing to offensive action in search of greater negotiating leverage. The temptation to escalate is driven by a narrowing window: the longer Iran absorbs economic damage without concessions, the more radical its options become. The Hormuz deal may be a temporary pressure valve rather than a durable de-escalation.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/25/iran-war-trump-sanctions-economy-collapse/"
+          "url": "https://foreignpolicy.com/2026/08/26/iran-trump-hormuz-escalate-energy-embargo/"
         },
         {
-          "headline": "Russia's Military Leadership Reshuffles as a Protracted War Drains National Capacity",
-          "summary": "Promotions within Russia's military command structure reveal how the Kremlin is adapting its institutional leadership to sustain a war that has already consumed far more resources—military, economic, and diplomatic—than Putin's original campaign envisioned. The personnel changes reflect both battlefield lessons and internal political dynamics, as Putin balances loyalty with operational competence. The composition of Russia's senior military leadership will be a key indicator of whether Moscow shifts strategic posture or doubles down on attrition.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/russias-next-top-general-promotions-in-russian-military-leadership/"
+          "headline": "Russia Pivots Hybrid Campaign Westward After Ukraine Stalemate",
+          "summary": "Following the Kremlin's failure to achieve decisive military gains in Ukraine, Putin appears to be redirecting sabotage, disinformation, and gray-zone operations toward NATO's European flank. The shift signals that Russia is recalibrating its pressure strategy rather than scaling it back, targeting infrastructure, institutions, and political cohesion across Europe. Whether European governments have the institutional resilience and intelligence capacity to counter an intensified hybrid campaign is the central question to watch.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/08/26/russia-ukraine-war-putin-europe-attacks-drones-sabotage-nato-hybrid-gray-zone-warfare/"
         },
         {
-          "headline": "Energy Security Is Reshaping Around Caucasus Corridors as Hormuz Dependence Persists",
-          "summary": "A parallel energy geography is emerging alongside the Strait of Hormuz, centered on pipelines and transit routes through the South Caucasus that are gaining strategic weight as states seek diversification from Gulf chokepoints. This shift has direct implications for countries like Azerbaijan, Georgia, and Turkey, which now occupy newly elevated positions in global energy security calculations. Disruption of Caucasus infrastructure—whether through conflict spillover or deliberate targeting—represents an underappreciated systemic risk for European and Asian importers.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/from-hormuz-to-the-caucasus-the-new-geography-of-energy-security/"
+          "headline": "Extradition Trial Exposes Breadth of Russia's Pro-Kremlin Network Across Africa",
+          "summary": "New details surfacing from an extradition proceeding are mapping a coordinated network of pro-Russian actors operating across the Sahel and into West Africa, with Benin serving as a node in what appears to be a broader influence architecture. The revelations underscore how Russia has institutionalized its African engagement beyond Wagner-era mercenary deployments into more durable political and intelligence structures. Analysts should track whether these networks are positioned to support additional coup facilitation or are primarily focused on sanction evasion and resource access.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/08/26/russia-influence-africa-extradition-trial-benin-coup/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. military policy is under scrutiny on multiple fronts, from civilian harm accountability gaps to personnel security and internal discipline, while Ukraine's war trajectory draws renewed concern.",
+      "intro": "U.S. forces are modernizing across energy, munitions, naval logistics, and ground combat doctrine as structural investments signal long-term strategic repositioning.",
       "items": [
         {
-          "headline": "Hegseth scrapped civilian protection program over senior officer objections, casualties followed",
-          "summary": "Despite advice from senior military officers to preserve the Civilian Harm Mitigation and Response program, Secretary Hegseth eliminated it, and hundreds of noncombatant deaths have since been attributed to the gap. The political and operational blowback is now significant enough that a partial restoration is reportedly under consideration. This signals a potential policy reversal with implications for U.S. legal exposure, alliance credibility, and rules-of-engagement oversight.",
+          "headline": "Army awards $2.2B contracts to five firms for on-base nuclear microreactors",
+          "summary": "The Army selected five companies under its Janus program to build up to 20 microreactors at military installations, with contracts valued at up to $2.2 billion. The push addresses energy resilience on bases but faces a complicating headwind: a domestic uranium enrichment shortage that could constrain reactor fuel supply. Watch whether supply chain constraints slow deployment timelines or force reliance on foreign enrichment sources.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/08/hegseth-civilian-protection-axed/415621/"
+          "url": "https://www.defenseone.com/business/2026/08/army-selects-5-companies-build-nuclear-microreactors-bases-under-new-2-billion-deal/415653/"
         },
         {
-          "headline": "Navy orders personnel and families to purge social media of service-identifying information",
-          "summary": "The Navy has directed active-duty members and their families to remove any social media content that identifies affiliation with the service, indicating elevated concern about adversary targeting or intelligence collection. The breadth of the directive—extending to family members—suggests a threat picture beyond routine operational security. Watch for similar guidance from other service branches and whether specific incidents prompted this action.",
+          "headline": "Army targets 8,000 short-range missiles annually in major munitions scale-up",
+          "summary": "The U.S. Army is seeking to procure up to 8,000 short-range missiles per year, reflecting sustained pressure to rebuild stockpiles drawn down by Ukraine aid and to deter near-peer adversaries. This follows a broader pattern of the Army urgently expanding its missile industrial base. The procurement rate and whether manufacturers can meet demand will be key indicators of readiness progress.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/08/25/navy-instructs-military-personnel-and-families-to-scrub-social-media-of-personal-information/"
+          "url": "https://www.militarytimes.com/news/your-army/2026/08/26/us-army-seeks-8000-new-short-range-missiles-per-year/"
         },
         {
-          "headline": "Ukraine's ousted defense minister warns of strategic drift and risk of losing the war",
-          "summary": "Former Ukrainian Defense Minister Fedorov, removed last month amid protests, publicly stated that Ukraine lacks a coherent strategy for winning its war with Russia and that structural changes are urgently needed. His dismissal and subsequent warnings point to serious internal fractures within Ukraine's leadership at a critical phase of the conflict. Western partners will be watching whether Kyiv can stabilize its defense establishment without losing battlefield momentum.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/08/25/ukraine-needs-changes-to-avoid-losing-war-ousted-defense-minister-says/"
-        },
-        {
-          "headline": "Active-duty Air Force officer charged under UCMJ for publicly calling for Trump's impeachment",
-          "summary": "An Air Force officer faces three charges under the Uniform Code of Military Justice after publicly calling for the impeachment of President Trump and Vice President Vance, a rare case that tests the boundaries of military free speech and political expression. The case will draw scrutiny over whether the charges reflect genuine UCMJ violations or politically motivated enforcement. The outcome could set a precedent affecting how service members engage with political discourse.",
+          "headline": "Marine Corps releases decade-long ground combat overhaul emphasizing stealth and infantry modernization",
+          "summary": "A new Marine Corps strategy document charts the service's vision through the early 2040s, with a sharp focus on infantry restructuring and stealth-oriented ground operations suited to contested, sensor-dense environments. The shift reflects lessons absorbed from Ukraine and planning assumptions about Indo-Pacific conflict scenarios. How the Marines resource this vision against competing budget pressures will determine whether doctrine translates into capability.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/08/25/active-duty-air-force-officer-who-called-for-trump-impeachment-faces-three-charges/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/26/marines-overhaul-infantry-stress-stealth-in-new-ground-combat-strategy/"
+        },
+        {
+          "headline": "Navy reconfigures deployment logistics following USS Abraham Lincoln's extended patrol",
+          "summary": "The Chief of Naval Operations indicated the Navy is overhauling pre-deployment resupply procedures and diversifying port call locations to include Africa and India, a direct response to operational strain exposed by the USS Abraham Lincoln's prolonged deployment. The pivot suggests the Navy is adapting to sustained high-tempo operations in multiple theaters simultaneously. Expanded access to Indian Ocean ports would meaningfully improve the service's forward logistics posture.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/26/us-navy-eyes-port-stops-in-africa-india-after-uss-abraham-lincolns-marathon-deployment/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is defined by open-source tracking of sanctions evasion, landmark battlefield data-sharing arrangements, and geospatial sleuthing resolving longstanding questions about Chinese air power.",
+      "intro": "U.S. intelligence community posture and Iranian threat actor expansion dominate today's intelligence picture, alongside significant diplomatic signals from an unusual CIA-Moscow contact.",
       "items": [
         {
-          "headline": "Bellingcat tracks sanctioned Russian vessel making suspicious loops through West African ports",
-          "summary": "A Russian ship previously linked to weapons shipments for mercenary forces has been moving through Cameroonian, Gabonese, and Nigerian ports since March in patterns experts describe as anomalous. The investigation illustrates how OSINT vessel tracking can expose sanctions evasion networks operating in lower-scrutiny maritime corridors. Watch for whether this triggers regulatory or enforcement responses from the named port states or Western sanctions authorities.",
-          "source": "Bellingcat",
-          "url": "https://www.bellingcat.com/news/africa/2026/08/25/patria-sanctioned-russian-vessel-russia-us-africa-cameroon-gabon-lagos-nigeria/"
-        },
-        {
-          "headline": "Ukraine agrees to share war-generated battlefield data with UK for AI training",
-          "summary": "Kyiv will provide British firms and researchers access to an extensive dataset accumulated during active combat operations, covering drone footage, sensor feeds, and related battlefield intelligence — a uniquely rich corpus for training military AI systems. This formalizes a significant intelligence-sharing arrangement that could accelerate UK autonomous systems development well beyond what peacetime simulations allow. The move also sets a precedent for how wartime data becomes a strategic export commodity among allies.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ukraine-uk-ai-drone-data"
-        },
-        {
-          "headline": "Satellite imagery analysis resolves mystery of J-20 decoy shapes at Chinese air bases",
-          "summary": "Open-source imagery analysts have determined the purpose of full-scale J-20 fighter-shaped outlines observed on Chinese airfield ramps over recent years, closing a persistent gap in public understanding of Chinese air base activity. The resolution demonstrates the analytical value of sustained geospatial monitoring of military installations. The findings have implications for assessing Chinese stealth fighter training, readiness postures, and potential deception doctrine.",
+          "headline": "CIA Director Ratcliffe's Covert Moscow Trip Sparks Alarm Over U.S.-Russia Intelligence Channel",
+          "summary": "John Ratcliffe made an unannounced visit to Moscow, with competing theories circulating about its purpose — ranging from back-channel ceasefire negotiations to nuclear signaling. The secrecy and timing of the visit suggest a shift in how Washington is managing sensitive communications with the Kremlin outside normal diplomatic channels. Analysts should watch for follow-on signals from either government that confirm or deny any operational or strategic agreements reached.",
           "source": "TWZ",
-          "url": "https://www.twz.com/air/the-mystery-of-j-20-fighter-like-shapes-spotted-in-china-has-been-solved"
+          "url": "https://www.twz.com/news-features/claims-swirl-around-cia-directors-reason-for-secret-moscow-visit-nearly-all-of-them-are-terrifying"
         },
         {
-          "headline": "UK government pursues covert authority to exclude high-risk technology suppliers from critical sectors",
-          "summary": "Proposed UK legislation would grant ministers the power to secretly ban specific vendors from supplying technology to critical national infrastructure operators, without public disclosure of the decision or its rationale. The secrecy provision is designed to avoid tipping off adversarial suppliers while still protecting sensitive sectors, but raises significant transparency and legal accountability questions. This mirrors broader Five Eyes efforts to formalize supply chain risk management while limiting adversary awareness of which vendors are flagged.",
+          "headline": "NSA Hosts TAO Alumni Event in Effort to Rebuild Elite Offensive Cyber Unit",
+          "summary": "The NSA is inviting former members of Tailored Access Operations — its premier offensive hacking division — back to Fort Meade amid a broader effort to reconstitute capability following years of personnel attrition and the unit's rebranding. The outreach signals the agency recognizes a talent gap in its most sensitive cyber operations functions. This is worth monitoring as a leading indicator of whether the U.S. is preparing to scale up offensive cyber capacity.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/uk-technology-national-security"
+          "url": "https://therecord.media/nsa-to-host-hacker-reunion-in-bid-to-rebuild-secretive-unit"
+        },
+        {
+          "headline": "Iranian Threat Actors Quietly Expand Operational Infrastructure Across Europe and the Middle East",
+          "summary": "Researchers have mapped a growing network of servers and domains linked to an Iranian hacking group, with nodes identified across multiple European and Middle Eastern countries — suggesting a deliberate expansion of operational reach beyond previous targeting patterns. The infrastructure buildup implies pre-positioning for broader espionage or disruptive operations rather than opportunistic activity. Organizations in the energy, government, and defense sectors in these regions should treat this as an elevated threat indicator.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/iran-linked-hackers-expand-infrastructure-europe-middle-east"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "OT security gaps at critical infrastructure organizations remain severe, with CISA red team findings and automotive malware highlighting expanding attack surfaces beyond traditional industrial targets.",
+      "intro": "Iran-linked attacks on water infrastructure and a U.S. disruption of Chinese hacking platforms dominate the OT threat landscape today, underscoring the sustained targeting of critical systems.",
       "items": [
         {
-          "headline": "CISA Red Team Exercises Reveal Systemic OT Security Failures at Critical Infrastructure Sites",
-          "summary": "CISA assessments of two critical infrastructure organizations found significant deficiencies in threat detection, incident response, and OT-specific security controls. The findings underscore a persistent gap between IT security maturity and OT environments, where legacy systems and poor network segmentation leave industrial operations exposed. Organizations operating ICS environments should treat these findings as a benchmark against their own posture, particularly around OT network visibility and response playbooks.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/cisa/cisa-red-team-assessments-expose-critical-infrastructure-gaps-in-threat-detection-response-and-ot-security/"
-        },
-        {
-          "headline": "First Malware Purpose-Built for Automotive Head Units Expands BadBox Botnet's Reach",
-          "summary": "Kaspersky researchers identified malware specifically engineered to compromise in-vehicle infotainment head units, linking it to the BadBox botnet already responsible for compromising millions of consumer and embedded devices. This marks a meaningful escalation in automotive cyber threats, moving beyond proof-of-concept research into active exploitation of vehicle-embedded systems. The finding signals that threat actors are extending botnet infrastructure into transportation cyber-physical systems, warranting attention from automotive OEMs and fleet operators.",
+          "headline": "Iran-Linked Actors Hit Over 100 Internet-Exposed Water Systems in July Campaign",
+          "summary": "CISA confirmed that more than 100 water utilities with internet-facing systems were targeted in July cyberattacks attributed to Iran-linked threat actors. The scale of the campaign highlights the acute risk posed by OT systems directly reachable from the public internet. CISA has issued hardening guidance focused on reducing internet exposure, a remediation step that many water utilities have been slow to implement.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/first-malware-built-specifically-for-car-head-units-fuels-botnet/"
+          "url": "https://www.securityweek.com/cisa-over-100-internet-exposed-water-systems-targeted-in-july-cyberattacks/"
         },
         {
-          "headline": "Policy Group Pushes for AI to Receive Critical Infrastructure Designation Under Trump Administration",
-          "summary": "Americans for Responsible Innovation issued a report calling on the Trump administration to formally designate AI as critical infrastructure, citing accelerating integration of AI systems into energy, healthcare, and other essential sectors without corresponding security frameworks. The absence of a federal designation leaves AI-dependent OT and ICS environments without clear regulatory accountability or incident reporting mandates. Watch for whether this recommendation gains traction as AI-driven automation deepens its footprint in industrial control environments.",
+          "headline": "DOJ and FBI Seize Chinese Hacking Platforms QScan and QTRouter Targeting Critical Infrastructure",
+          "summary": "Federal authorities seized two Chinese-linked platforms—QScan and QTRouter—operated by a group identified as QTFY, which sold hacking services to the Chinese government and private clients for use against U.S. critical infrastructure and military targets. The seizure signals an escalating U.S. posture of active disruption against Chinese cyber-for-hire operations rather than purely defensive response. Watch for follow-on indictments and whether related infrastructure used against energy or defense-industrial OT networks is identified.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ai/ari-urges-trump-to-designate-ai-as-critical-infrastructure-amid-growing-cyber-risks-across-critical-sectors/"
-        },
-        {
-          "headline": "China- and Russia-Linked APT Groups Intensify Campaigns Against Telecom Sector Infrastructure",
-          "summary": "CYFIRMA rated the telecommunications sector's external threat landscape as high risk, citing sustained and escalating APT activity linked to Chinese and Russian state actors. Telecom networks underpin SCADA communications, remote OT monitoring, and emergency coordination systems, making them a high-value target whose compromise can cascade into industrial environments. The trend reinforces the need for critical infrastructure operators to assess their telecom provider dependencies as part of OT supply chain risk management.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/reports/cyfirma-reports-telecom-sector-faces-high-cyber-risk-as-china-russia-linked-apt-campaigns-intensify/"
+          "url": "https://industrialcyber.co/critical-infrastructure/doj-fbi-seize-china-linked-qscan-and-qtrouter-platforms-used-to-target-us-critical-infrastructure/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 98,
-    "items_published": 20
+    "articles_reviewed": 80,
+    "items_published": 17
   }
 }
