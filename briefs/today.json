@@ -1,156 +1,138 @@
 {
-  "date": "2026-08-28",
-  "generated_at": "2026-08-28T09:05:28.305703+00:00",
-  "issue": 120,
-  "executive_summary": "Today's intelligence picture is defined by two reinforcing macro-themes: accelerating adversarial pressure on Western critical infrastructure and a fraying of the Western alliance architecture intended to counter it. The infrastructure threat is the day's sharpest signal, with the White House declaring a national emergency over foreign equipment in the power grid, CISA issuing urgent ICS exposure guidance, and Germany reporting surging state-sponsored cyberattacks from China and Russia, all pointing to a coordinated, multi-front effort by peer adversaries to pre-position inside systems that underpin military and economic power. Simultaneously, the alliance framework meant to deter that pressure is visibly weakening, with the Pentagon reviewing NATO troop withdrawal options, US-Japan relations deteriorating, North Korea walking away from diplomacy, and submarine maintenance backlogs leaving the Navy with 15,000 fewer operational days, suggesting adversaries may be timing escalation to coincide with a period of Western institutional distraction and self-inflicted readiness gaps. The supply-chain attack arrests in Australia, the Eagle S sabotage case in Finland, and Russia's deployment of extended-range Iskander missiles tie the threads together further, indicating that gray-zone operations targeting physical and digital infrastructure are not isolated incidents but part of a sustained, coordinated campaign by Russian and Chinese-aligned actors who assess the current moment of alliance uncertainty as a window of opportunity.",
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T09:01:56.026040+00:00",
+  "issue": 121,
+  "executive_summary": "Today's intelligence picture is defined by a widening gap between adversary capability and Western institutional readiness across both the cyber and military domains. The active exploitation of enterprise software vulnerabilities, the UK NCSC warning on operational technology attacks, and the Boston Scientific manufacturing disruption collectively signal that adversaries are deliberately targeting the industrial and administrative backbone of Western economies, not just traditional IT networks. Simultaneously, the military picture reflects structural strain: the Navy's post-operation funding shortfall, record deployment lengths threatening retention, and SOCPAC's warning about irregular Pacific warfare suggest U.S. forces are being consumed by current operational tempo precisely as the threat environment demands long-term Pacific repositioning, a tension underscored by satellite imagery confirming accelerated Chinese flight test activity and U.S. basing expansion in Spain. The geopolitical layer ties these threads together, as North Korea's Ukraine deployment fractures East Asian alliance cohesion, Arctic pressure reshapes European alignment, and domestic governance concerns around oligarchic influence raise questions about the durability of the Western institutional consensus that underpins collective defense and intelligence-sharing arrangements.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is defined by active exploitation of known vulnerabilities, a landmark supply chain arrest, and escalating state-sponsored threats against Western industry.",
+      "intro": "Active exploitation of enterprise software vulnerabilities dominates today's threat landscape, with attackers targeting both print management and IT service platforms.",
       "items": [
         {
-          "headline": "Australia arrests two suspects behind record-breaking software supply chain attack campaign",
-          "summary": "Australian Federal Police arrested two Western Australia men, aged 21 and 23, allegedly linked to TeamPCP, a cybercrime group accused of the longest sustained software supply chain attack spree on record, targeting thousands of victims globally through malicious open-source packages. The arrests signal meaningful law enforcement progress against supply chain threat actors, a vector that has proven notoriously difficult to prosecute. Watch for further indictments and whether extradition or international cooperation extends the case beyond Australia.",
-          "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/"
-        },
-        {
-          "headline": "CISA flags three actively exploited vulnerabilities, including a years-old ownCloud authentication flaw",
-          "summary": "CISA added three vulnerabilities to its Known Exploited Vulnerabilities catalog, including CVE-2023-49105, an improper authentication flaw in ownCloud that dates to 2023 and is still being weaponized in the wild. Active exploitation of aging, unpatched vulnerabilities remains a primary intrusion vector for both criminal and state actors. Federal agencies face mandatory remediation deadlines; private sector organizations should treat KEV additions as urgent patch prioritization signals.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/08/27/cisa-adds-three-known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "headline": "White House bans foreign-made power grid components citing cyber backdoor risk",
-          "summary": "The Trump administration issued a prohibition on acquiring foreign-manufactured equipment used to manage electricity generation and distribution, citing evidence that foreign actors are deliberately embedding and exploiting vulnerabilities in grid technology. The move reflects growing concern that critical infrastructure supply chains are a strategic attack surface, particularly for adversaries like China and Russia. This policy will force utilities and grid operators to reassess procurement pipelines, with significant cost and timeline implications.",
+          "headline": "PaperCut print management vulnerabilities actively exploited in the wild",
+          "summary": "PaperCut issued an emergency advisory warning that flaws in its widely deployed PaperCut NG and MF print management software are being actively exploited by attackers. Print management software is commonly overlooked in patch prioritization despite its broad organizational deployment, making it an attractive lateral movement vector. Organizations running PaperCut NG or MF should treat this as urgent and apply patches or mitigations immediately.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/trump-cyber-electricity-parts"
+          "url": "https://therecord.media/papercut-warns-of-hackers-using-printer-management-vulnerabilities"
         },
         {
-          "headline": "German private sector reports sharp rise in Chinese and Russian state-sponsored cyberattacks",
-          "summary": "A new survey of German companies confirms that foreign intelligence services, primarily from China and Russia, are increasingly the attributed source of cyberattacks on the country's private sector. Germany's industrial base, home to high-value manufacturing and defense technology, makes it a persistent target for economic espionage and disruption operations. The findings align with broader European threat reporting and will likely intensify pressure on Berlin to harden corporate cybersecurity requirements.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/germany-cyberattacks-china-russia"
+          "headline": "Red team exercise exposes how ServiceNow misconfigurations can hand attackers the keys to IT infrastructure",
+          "summary": "MDSec's detailed red team writeup reveals how roughly 6,000 employees within a target organization were just two steps away from full IT infrastructure compromise through ServiceNow misconfigurations. ServiceNow's deep integration with identity, asset management, and ticketing systems makes it a high-value attack surface that is frequently under-secured relative to its access privileges. Security teams should audit ServiceNow role assignments and API access controls as a priority, particularly in enterprises where the platform has grown organically.",
+          "source": "MDSec",
+          "url": "https://www.mdsec.co.uk/2026/08/when-it-snows-it-pours-anatomy-of-a-servicenow-red-team/"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "U.S. alliance credibility is under strain across multiple theaters, from the Pacific to Northeast Asia to Europe, as Washington's strategic posture faces questions from partners and adversaries alike.",
+      "intro": "Arctic sovereignty pressures, North Korea's battlefield-hardened military, and American oligarchic influence are reshaping alliance frameworks and democratic norms simultaneously.",
       "items": [
         {
-          "headline": "North Korea Signals End to Denuclearization Talks, Rebuffing Trump Diplomacy",
-          "summary": "Kim Jong Un has effectively closed the door on any Trump-era engagement centered on denuclearization, calculating that his nuclear arsenal is more valuable than diplomatic normalization. This marks a significant shift from the 2018-2019 summit era and complicates U.S. deterrence posture in Northeast Asia. Watch for whether Washington recalibrates toward pressure or continues seeking an opening Pyongyang has no interest in.",
+          "headline": "Arctic pressure from Washington accelerates Iceland's EU membership push",
+          "summary": "U.S. assertiveness over Greenland and Arctic resources is driving Iceland toward a referendum on reopening EU accession talks — a significant strategic shift for a country that has long resisted membership. This reflects a broader pattern of smaller Arctic-adjacent states hedging against unpredictable American foreign policy. Watch whether Norway and other Nordic non-EU members face similar domestic pressure to reconsider their relationships with Brussels.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/27/north-korea-kim-jong-un-trump-meeting-nuclear/"
+          "url": "https://foreignpolicy.com/2026/08/28/iceland-referendum-eu-membership-trump-greenland-arctic-critical-minerals/"
         },
         {
-          "headline": "Trump's Erratic Treatment of Japan Is Straining a Critical Pacific Alliance",
-          "summary": "Tokyo is struggling to manage an ally whose behavior increasingly resembles that of an adversary, with repeated policy reversals undermining Japanese strategic planning and domestic political confidence in the U.S. security umbrella. Japan lacks precedent or a coherent playbook for hedging against a U.S. administration that alternates between commitment and betrayal. The longer-term risk is that Tokyo quietly accelerates autonomous defense capabilities and reduces dependency on Washington.",
+          "headline": "North Korea's Ukraine deployment is stress-testing U.S. alliance architecture in East Asia",
+          "summary": "North Korean forces gaining real combat experience in Ukraine represents a qualitative military upgrade that directly threatens U.S. defense planning on the Korean Peninsula. The Russia-DPRK partnership is complicating Washington's ability to manage its South Korean and Japanese alliances coherently, as Pyongyang's battlefield learning closes capability gaps faster than U.S. strategy anticipated. The key variable to track is whether Seoul accelerates its own independent deterrence posture in response.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/27/trump-japan-takaichi-alliance/"
+          "url": "https://foreignpolicy.com/2026/08/28/north-korea-russia-united-states-south-korea-ukraine-national-defense-alliance-strategy/"
         },
         {
-          "headline": "Pentagon Europe Drawdown Plans Face Significant Institutional Resistance",
-          "summary": "Proposed U.S. force reductions in Europe are running into opposition from Congress, NATO allies, and contradictory signals from Trump himself, suggesting sweeping changes are unlikely in the near term. The debate nonetheless signals to Moscow that Washington's commitment to European defense is politically contested, which carries deterrence costs regardless of outcome. The posture review's trajectory will be a key indicator of whether Colby-era strategic prioritization toward Asia is actually being operationalized.",
+          "headline": "Kushner's financial dealings abroad signal a deeper structural shift toward oligarchic governance",
+          "summary": "The analysis argues that Jared Kushner's foreign investment activities represent not individual corruption but a systemic blurring of private financial interests and U.S. foreign policy — a model increasingly mirroring autocratic governance structures. This matters because transactional relationships between American power brokers and authoritarian governments erode the credibility of U.S. commitments to allies and democratic partners. The long-term risk is a foreign policy increasingly shaped by personal capital flows rather than strategic national interest.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/27/us-europe-defense-posture-review-troops-elbridge-colby-hegseth-nato/"
+          "url": "https://foreignpolicy.com/2026/08/28/american-oligarchy-geopolitics-dictators-democracy-jared-kushner-trump/"
         },
         {
-          "headline": "Settler Violence in the West Bank Is Escalating Beyond Israeli Government Control",
-          "summary": "Unchecked settler attacks on Palestinian communities are intensifying, drawing growing international pressure on Jerusalem to impose accountability it has shown little willingness to enforce. The violence is eroding the legal and physical contours of any potential two-state framework while fueling radicalization dynamics on both sides. Washington's response — or continued silence — will be closely watched as a signal of how much leverage the U.S. is willing to exercise over Israeli domestic policy.",
+          "headline": "Japan's restrictive residency policies risk accelerating its demographic and economic decline",
+          "summary": "Prime Minister Takaichi's tightening of permanent residency pathways is pushing skilled foreign workers to seek opportunities elsewhere, undermining sectors already strained by Japan's shrinking labor force. Rural communities and industrial supply chains face the most immediate consequences, with downstream effects on Japan's capacity to sustain defense manufacturing and economic competitiveness. This runs counter to U.S. interests in a robust, capable Japanese partner and adds internal fragility to a critical Indo-Pacific ally.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/27/settler-violence-west-bank-palestine-israel/"
+          "url": "https://foreignpolicy.com/2026/08/28/sanae-takaichi-japan-permanent-residency-foreign-workers-ldp-immigration/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by readiness gaps and strategic investments, from a damning GAO submarine report to new Pentagon contracts aimed at cheaper missile defense and forward-deployed nuclear energy.",
+      "intro": "U.S. military posture is under strain across multiple fronts, with Pacific irregular warfare doctrine evolving, naval readiness facing a funding crisis post-Epic Fury, and a massive F-15 contract reshaping Air Force modernization.",
       "items": [
         {
-          "headline": "GAO: A Decade of Submarine Maintenance Delays Cost Navy 15,000 Operational Days and $3.4 Billion",
-          "summary": "A new GAO report found that U.S. submarine maintenance backlogs over the past ten years have consumed 15,000 days of operational availability and $3.4 billion in sustainment costs for non-mission-capable boats and crews. The finding underscores a structural shortfall in naval shipyard capacity at a moment when undersea competition with China is intensifying. Watch for whether Congress uses this report to accelerate shipyard modernization funding or demand accountability from the Navy's maintenance enterprise.",
+          "headline": "Navy CNO warns of $8 billion shortfall following Operation Epic Fury, requests emergency funding",
+          "summary": "Chief of Naval Operations Adm. Daryl Caudle has gone public with an urgent appeal for approximately $8 billion in additional funding to restore Navy solvency after losses and expenditures from Epic Fury. This follows a separate op-ed warning that NSA Bahrain, damaged in the conflict, must be rebuilt to pre-attack capability or it will fundamentally alter how the Navy operates in the region. The combination signals a Navy stretched thin operationally and fiscally — watch for whether Congress acts before the next budget cycle.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/27/15000-operational-days-lost-in-10-years-due-to-us-submarine-maintenance-delays-gao/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/28/after-epic-fury-navy-may-need-an-extra-8-billion-to-be-solvent-cno-says/"
         },
         {
-          "headline": "Pentagon Awards Contract for Sub-$750K Anti-Ballistic Missile Interceptors",
-          "summary": "The Pentagon selected X-Bow Systems to develop a new cost-constrained interceptor missile with a per-shot price target below $750,000, part of a broader push to field affordable missile defense at scale. The contract signals a deliberate pivot away from high-cost interceptors that are economically unsustainable against saturation missile threats. Watch whether competing vendors challenge the award and whether the cost ceiling holds through development.",
+          "headline": "Air Force locks in Boeing for F-15 production and sustainment under $131 billion sole-source contract",
+          "summary": "The Air Force awarded Boeing a sole-source contract with a $131.23 billion ceiling covering F-15 production, modernization, and sustainment — one of the largest defense contracts in recent memory. The sole-source designation means no competitive bidding, which will draw scrutiny given Boeing's recent program management challenges. This locks in the F-15 as a long-term pillar of U.S. air power even as next-generation platforms remain in development.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/pentagon/2026/08/27/pentagon-awards-contract-in-race-to-field-cheaper-interceptors-missiles/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/28/air-force-awards-boeing-131-billion-ceiling-contract-for-f-15-production-modernization/"
         },
         {
-          "headline": "Army Moves Forward on Nuclear Microreactors, Selecting Five Vendors and Installation Sites",
-          "summary": "The Army's Janus Program has identified five nuclear energy companies and five base locations to build and operate small modular nuclear reactors, advancing a concept designed to provide resilient, independent power at forward operating locations. Microreactors reduce dependence on vulnerable fuel supply chains, a critical vulnerability highlighted in recent wargames. This is an early but significant step; watch for regulatory timelines and community opposition near selected installations.",
-          "source": "Department of War News Feed",
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4584583/army-selects-vendors-sites-for-nuclear-microreactors/"
+          "headline": "SOCPAC commander warns a Pacific conflict will likely be irregular, not conventional",
+          "summary": "At an irregular-warfare forum in Hawaii, Special Operations Command Pacific's commander outlined why a future Pacific conflict may not resemble traditional great-power war, emphasizing gray-zone competition, proxy forces, and non-kinetic operations. The warning reflects a doctrinal debate within the U.S. military about whether conventional force-on-force planning frameworks are adequate for the Indo-Pacific theater. This framing has direct implications for how the Marines' AI-driven logistics work and Pacific posture investments should be evaluated.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/threats/2026/08/pacific-conflict-may-not-look-conventional-war-socpac-commander-says/415704/"
         },
         {
-          "headline": "Pentagon's NATO Troop Review to Present Hegseth with Multiple Withdrawal Options by November",
-          "summary": "A formal Pentagon review of U.S. force posture in Europe will deliver at least four distinct troop-level options to Defense Secretary Hegseth by November 6, suggesting a structured process for potential drawdown rather than ad hoc decisions. The timeline creates a near-term inflection point that will be closely watched by NATO allies already anxious about American commitment to the alliance. Any reduction in forward-deployed forces would have direct implications for deterrence in the Baltic and Eastern European flanks.",
+          "headline": "Record deployment lengths are driving sailors to reconsider reenlistment",
+          "summary": "Sailors aboard vessels like the USS Abraham Lincoln are citing unprecedented deployment durations and lack of communication about timelines as key factors in decisions not to reenlist. This retention pressure compounds the Navy's existing readiness and funding challenges at a moment when it is simultaneously recovering from Epic Fury losses. If the trend accelerates, it poses a structural risk to naval manning that hardware investments alone cannot solve.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/08/27/pentagons-nato-review-preparing-troop-options-for-hegseth-by-november-6/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/28/record-long-deployments-add-new-layer-to-sailors-reenlistment-decisions/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture centers on accountability gaps in hybrid warfare and cybercrime, with courts and law enforcement struggling to enforce jurisdiction over suspects who have fled.",
+      "intro": "Open-source imagery and infrastructure analysis are driving key insights today, with satellite and observation data revealing significant military buildouts across multiple theaters.",
       "items": [
         {
-          "headline": "Finnish Appeals Court Revives Eagle S Sabotage Case Despite Suspects Leaving Country",
-          "summary": "Finland's appeals court has ordered the Helsinki District Court to hear the Eagle S cable-cutting case on its merits, but the three accused officers have already departed Finland, creating a significant enforcement gap. The case centers on the suspected deliberate severing of undersea cables in the Baltic — a hallmark of Russia's hybrid warfare playbook. Watch whether Finland pursues extradition or whether this becomes another unresolved hybrid-threat prosecution.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/finland-appeals-court-revives-case-against-eagle-s"
-        },
-        {
-          "headline": "Australia Charges Two Men Linked to TeamPCP in Major Supply-Chain Attack Campaign",
-          "summary": "Australian authorities have charged two individuals alleged to be members of TeamPCP, a cybercrime group responsible for one of the past year's most impactful supply-chain intrusion campaigns. Supply-chain attacks carry outsized damage potential because a single compromise can cascade across hundreds of downstream victims. The charges signal growing law enforcement coordination against organized cybercrime groups operating in the Asia-Pacific region.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/australia-teampcp-hackers-arrested"
-        },
-        {
-          "headline": "Russia Deploying Extended-Range Iskander Missiles, Complicating Ukraine's Counter-Battery Efforts",
-          "summary": "Ukrainian intelligence has confirmed Russia is now fielding longer-range variants of the Iskander ballistic missile system, pushing launch points further from the front line and out of effective Ukrainian strike range. This development directly undermines Ukraine's ongoing campaign to locate and destroy mobile missile launchers before they can fire. The shift represents a tactical adaptation by Russia and will likely force Ukraine to reassess its counter-missile ISR priorities.",
+          "headline": "Satellite Imagery Reveals Accelerated Construction at China's Most Secretive Flight Test Facility",
+          "summary": "Commercial satellite imagery shows a sharp acceleration in construction at China's primary classified flight test range, with large new hangars pointing to the likely arrival of a new aircraft type in the near term. The pace of buildout is a strong indicator of a maturing advanced aviation program, likely stealth or unmanned. Analysts should watch for follow-on imagery showing aircraft signatures or associated ground support equipment that could help characterize the platform.",
           "source": "TWZ",
-          "url": "https://www.twz.com/land/russia-is-now-using-longer-range-iskander-ballistic-missiles-ukraine-intel"
+          "url": "https://www.twz.com/news-features/chinas-area-51-is-undergoing-a-massive-expansion"
+        },
+        {
+          "headline": "OSINT Confirms U.S. Infrastructure Expansion for B-52s at Spanish Base After Basing Dispute",
+          "summary": "Open-source analysis confirms the U.S. is investing in expanded B-52 bomber capacity at Morón Air Base in Spain, a move that follows Spain's refusal to permit long-range bomber missions against Iran to be launched from the facility. The expansion signals a U.S. effort to lock in forward basing options despite political friction with host nations. This highlights an ongoing tension between alliance commitments and operational autonomy that will shape future force posture decisions in Europe.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/news-features/u-s-expanding-b-52-bomber-capacity-at-moron-air-base-in-spain"
+        },
+        {
+          "headline": "Indonesia's Carrier Transit from Italy Trackable via Open-Source Maritime Data",
+          "summary": "Indonesia's first aircraft carrier has departed Italy and is in transit, a movement that can be monitored through open-source maritime tracking tools and represents a shift in Southeast Asian naval balance. The acquisition places Indonesia in a small regional carrier club alongside Thailand, adding a new layer to Indo-Pacific force projection calculus. Analysts should track the vessel's arrival timeline and subsequent integration with Indonesian naval aviation assets.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/news-features/indonesias-first-aircraft-carrier-is-on-its-way-from-italy"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Policy and guidance activity dominated the ICS/OT space today, with the White House declaring a national emergency over foreign power grid equipment while CISA issued new guidance to reduce industrial system exposure.",
+      "intro": "OT environments are facing heightened threat actor attention, with a UK government warning and a major medical manufacturer disruption underscoring the sector's growing exposure.",
       "items": [
         {
-          "headline": "White House Declares National Emergency Over Foreign Equipment in US Power Grid",
-          "summary": "Executive Order 14420 expands federal scrutiny of industrial control systems used in bulk-power infrastructure, targeting foreign-origin hardware that could carry backdoors or enable sabotage. The declaration of a national emergency signals the administration views supply chain compromise of grid equipment as an immediate threat, not a future risk. Organizations operating grid-connected ICS should expect accelerated procurement restrictions and potentially mandatory audits of existing foreign-sourced components.",
+          "headline": "UK NCSC Issues Warning on Escalating Attacks Against Operational Technology Systems",
+          "summary": "The UK's National Cyber Security Centre has flagged a notable rise in threat actors targeting OT systems, with particular focus on internet-exposed devices and edge infrastructure. The advisory reflects a broader pattern of adversaries probing industrial control environments as an entry point or disruption vector. Organizations running internet-facing HMIs, PLCs, or OT-adjacent edge devices should treat this as an urgent signal to audit exposure and segment networks.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/trump-issues-eo-14420-to-secure-us-bulk-power-systems-from-foreign-equipment-cybersecurity-risks/"
+          "url": "https://industrialcyber.co/control-device-security/uk-ncsc-warns-of-increased-ot-targeting-as-threat-actors-exploit-internet-exposed-systems-and-edge-devices/"
         },
         {
-          "headline": "CISA Publishes Guidance Directing Organizations to Remove ICS and OT Systems from Internet Exposure",
-          "summary": "CISA's Internet Exposure Reduction guidance provides organizations with structured steps to identify and eliminate unnecessary internet-facing access on IT, OT, and ICS assets — a long-standing attack vector in critical infrastructure incidents. The guidance is notable for explicitly addressing industrial systems alongside traditional IT, reflecting recognition that internet-exposed PLCs and HMIs remain a persistent and underaddressed risk. Operators should treat this as a compliance signal ahead of potential regulatory action.",
+          "headline": "Boston Scientific Cyber Incident Disrupts Manufacturing IT and Order Fulfillment",
+          "summary": "Medical device manufacturer Boston Scientific confirmed a cybersecurity incident affecting IT systems and order processing operations, with disruption described as ongoing. The incident highlights the operational—not just data—consequences of cyberattacks on manufacturers with complex supply chains and clinical dependencies. Watch for downstream impacts on medical device availability if the incident spreads to production systems.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/cisa/cisa-issues-internet-exposure-reduction-guidance-to-reduce-risks-from-it-ot-ics-and-industrial-systems/"
-        },
-        {
-          "headline": "CISA Vulnerability Review Finds Systemic Gaps in CVE Data Covering Industrial Systems",
-          "summary": "CISA's new Vulnerability Review highlights incomplete and inconsistent CVE data as a structural problem undermining defenders' ability to prioritize patching across ICS and OT environments. The agency renewed its push for Secure by Design principles, arguing that vulnerability-by-vulnerability remediation cannot keep pace with the rate of new weaknesses in industrial software. The report serves as a baseline document that may inform future CISA advisories and vendor accountability measures.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/cisa/cisa-vulnerability-review-flags-cve-data-gaps-common-weaknesses-urges-secure-by-design-to-address-vulnerability-root-causes/"
+          "url": "https://industrialcyber.co/manufacturing/boston-scientific-faces-ongoing-operational-disruption-after-cybersecurity-incident-impacts-it-systems-order-processing/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 93,
-    "items_published": 18
+    "articles_reviewed": 69,
+    "items_published": 15
   }
 }
